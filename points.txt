@@ -1,0 +1,9 @@
+GOAL:-BUILD A PROPER FOOD WEBSITE IN 6 DAYS [HTML,CSS,JS,GSAP ANIMATIONS]
+DAY1:-Bulid a nav bar and footer,which consisting of search bar and location bar, login[HTML,css]
+DAY2:-Customize the search bar using api[JS]
+DAy3:-Bulid the filter section and product section[js]
+DAY4:-Customize the filter section and login form validation[js]
+DAY5:- ADD-TO-CART functionality[js]
+DAY6:-Payment section
+DAY7:- Complete the project by doing responsive
+Color theme[white,orange,black ,pink]

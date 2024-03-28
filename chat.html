@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODIEEEE|HOMEPAGE</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="midsection.css">
+    <link rel="stylesheet" href="fliter.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body> 
+    <nav>
+        <div class="navbar">
+    <a href="foodiee.html">      <div class="logo">
+                <img src="images/logo.jpg" alt=""></a> 
+            </div>
+            <div class="location" id="location">
+                <h5 id="address">ALLOW LOCATION ACCES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" id="locBTN">Get Location</button></h5>
+               
+            </div>
+            <div class="searchbar" id="search" class="location">
+           <a href="contactus.html" id="contact" title="Contact us">  <i class="fa-solid fa-headset" ></i></a> 
+          <a href="chat.html" id="chat"> <i class="fa-regular fa-comments" title="chat with us"></i></a>
+            </div>
+            <div class="profile" id="LOGIN"> <a href="login.html" title="profile"><i class="fa-solid fa-id-card"></i></a></div>
+        </div>
+    </nav>
+<section id="wastege"></section>
+<div id="offlinecontainer"></div>
+
+<div id="chat-container">
+  <div id="chat-display"></div>
+  <input type="text" id="user-input" placeholder="Type your message...">
+  <button onclick="sendMessage()" id="send">Send</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Your food website is dedicated to providing you with the best recipes and culinary inspiration.</p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@yourfoodwebsite.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"> <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook </a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> &nbsp;&nbsp;Twitter</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Your Food Website. All Rights Reserved.
+        </div>
+        <div class="scrollbtn" ><i class="fa-solid fa-arrow-up" id="scrollbtn"></i></div>
+      </footer>
+ <script src="chat.js"></script>
+</body>
+</html>

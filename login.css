@@ -1,0 +1,45 @@
+.logincontainer {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(255, 68, 0, 0.604);
+}
+
+#profileView {
+    margin-top: 20px;
+}
+
+#profileView p {
+    margin-bottom: 10px;
+}
+.active
+{
+    color: white;
+}
