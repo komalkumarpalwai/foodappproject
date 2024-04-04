@@ -1,15 +1,5 @@
-// const closeBtn = document.getElementById('closeBtn');
-// const notification = document.querySelector('.notification');
-// const navbar=document.querySelector(".navbar")
-// closeBtn.addEventListener('click', () => {
-//     notification.classList.add('hidden');
-// navbar.style.top="0"
-
-//});
-//location
 let locationButton = document.getElementById("locBTN");
 let locationDiv = document.getElementById("address");
-
 locationButton.addEventListener("click", () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showLocation, showError);
@@ -17,7 +7,6 @@ locationButton.addEventListener("click", () => {
     locationDiv.innerText = "Geolocation is not supported by this browser.";
   }
 });
-
 function showError(error) {
   switch (error.code) {
     case error.PERMISSION_DENIED:
@@ -34,21 +23,17 @@ function showError(error) {
       break;
   }
 }
-
 async function showLocation(position) {
   try {
     const { latitude, longitude } = position.coords;
     let formattedAddress = await getAddressFromCoordinates(latitude, longitude);
     locationDiv.innerText = formattedAddress;
-
-    // Store location data in local storage
     localStorage.setItem("userLocation", JSON.stringify({ latitude, longitude, address: formattedAddress }));
   } catch (error) {
     console.error("Error fetching location:", error);
     locationDiv.innerText = "Error fetching location.";
   }
 }
-
 async function getAddressFromCoordinates(latitude, longitude) {
   try {
     const response = await fetch(
@@ -80,7 +65,6 @@ async function getAddressFromCoordinates(latitude, longitude) {
     throw new Error("Error fetching address from coordinates");
   }
 }
-
 window.onload = function () {
   const storedLocation = localStorage.getItem("userLocation");
   if (storedLocation) {
@@ -88,7 +72,6 @@ window.onload = function () {
     locationDiv.innerText = address;
   }
 };
-
   document.addEventListener("DOMContentLoaded", function() {
     const scrollTopButton = document.getElementById("scrollbtn");
   
@@ -99,34 +82,25 @@ window.onload = function () {
       });
     });
   });
- 
 let messageOffline = () => {
   let dish=document.getElementsByClassName("dishTypes")
   let category=document.getElementById("category")
   category.style.display="none"
- 
 let offlineContainer = document.getElementById("offlinecontainer");
-
 let messageElement = document.createElement("div");
 messageElement.id = "message";
 messageElement.textContent = "Your internet connection was lost.";
-
 let dogImageContainer = document.createElement("div");
 dogImageContainer.id = "dogImageContainer";
 let dogImage = document.createElement("img");
     dogImage.src = "images/dog.webp"; 
     dogImage.alt = "Dog";
-
     dogImageContainer.appendChild(dogImage);
 offlineContainer.appendChild(messageElement);
 offlineContainer.appendChild(dogImageContainer);
-
 }
-
 if (window.navigator.onLine) {
-    messageOnline();
-   
+    messageOnline();  
 } else {
     messageOffline();
-    
 }
